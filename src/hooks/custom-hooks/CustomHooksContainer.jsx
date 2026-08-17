@@ -9,9 +9,10 @@ import FetchDataComponent from './components/FetchDataComponent';
 import PaginationComponent from './components/PaginationComponent';
 import EventListenerComponent from './components/EventListenerComponent';
 import UserRegistrationForm from './components/UserRegistrationForm';
-import './HooksContainer.css';
+import WebSocketComponent from './components/WebSocketComponent';
+import './CustomHooksContainer.css';
 
-const HooksContainer = () => {
+const CustomHooksContainer = () => {
   return (
     <div className="hooksContainer">
       <CounterComponent />
@@ -24,8 +25,9 @@ const HooksContainer = () => {
       <EventListenerComponent />
       <PaginationComponent />
       <UserRegistrationForm />
+      <WebSocketComponent />
     </div>
   );
 }
 
-export default HooksContainer;
+export default CustomHooksContainer;
