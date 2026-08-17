@@ -1,5 +1,5 @@
 import 'react';
-import usePrevious from '../customHooks/usePrevious';
+import usePrevious from '../hooks/usePrevious';
 
 const PreviousValue = () => {
   const { value, previousValue, handleValue } = usePrevious();

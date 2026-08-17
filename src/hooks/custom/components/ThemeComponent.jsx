@@ -1,5 +1,5 @@
 import 'react'
-import useTheme from '../customHooks/useTheme';
+import useTheme from '../hooks/useTheme';
 import './ThemeComponent.css';
 
 const ThemeComponent = () => {

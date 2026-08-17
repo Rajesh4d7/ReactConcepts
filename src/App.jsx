@@ -1,22 +1,22 @@
 import 'react';
-import CounterComponent from './components/CounterComponent';
-import PreviousValue from './components/PreviousValue';
-import DebounceComponent from './components/DebounceComponent';
-import ThrottleComponent from './components/ThrottleComponent';
-import ThemeComponent from './components/ThemeComponent';
-import ClickOutSideComponent from './components/ClickOutSideComponent';
-import './App.css';
+import { StrictMode } from 'react';
+import { BrowserRouter, Link, Routes, Route } from 'react-router-dom';
+import { HooksContainer, ReactHooksContainer} from './hooks';
 
 const App = () => {
   return (
-    <div className="appContainer">
-      <CounterComponent />
-      <PreviousValue />
-      <DebounceComponent/>
-      <ThrottleComponent />
-      <ThemeComponent />
-      <ClickOutSideComponent />
-    </div>
+    <StrictMode>
+      <BrowserRouter>
+        <nav style={{ display: 'flex', gap: '10px', padding: '10px' }}> 
+          <Link to="/custom-hooks">Custom Hooks</Link>
+          <Link to="/react-hooks">React Hooks</Link>
+        </nav>
+        <Routes>
+          <Route path="/custom-hooks" element={<HooksContainer />} />
+          <Route path="/react-hooks" element={<ReactHooksContainer />} />
+        </Routes>
+      </BrowserRouter>
+    </StrictMode>
   );
 }
 

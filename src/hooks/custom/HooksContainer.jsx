@@ -1,0 +1,31 @@
+import 'react';
+import CounterComponent from './components/CounterComponent';
+import PreviousValue from './components/PreviousValue';
+import DebounceComponent from './components/DebounceComponent';
+import ThrottleComponent from './components/ThrottleComponent';
+import ThemeComponent from './components/ThemeComponent';
+import ClickOutSideComponent from './components/ClickOutSideComponent';
+import FetchDataComponent from './components/FetchDataComponent';
+import PaginationComponent from './components/PaginationComponent';
+import EventListenerComponent from './components/EventListenerComponent';
+import UserRegistrationForm from './components/UserRegistrationForm';
+import './HooksContainer.css';
+
+const HooksContainer = () => {
+  return (
+    <div className="hooksContainer">
+      <CounterComponent />
+      <PreviousValue />
+      <DebounceComponent/>
+      <ThrottleComponent />
+      <ThemeComponent />
+      <ClickOutSideComponent />
+      <FetchDataComponent />
+      <EventListenerComponent />
+      <PaginationComponent />
+      <UserRegistrationForm />
+    </div>
+  );
+}
+
+export default HooksContainer;

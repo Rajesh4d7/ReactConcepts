@@ -1,5 +1,5 @@
 import  'react';
-import useThrottle from '../customHooks/useThrottle';
+import useThrottle from '../hooks/useThrottle';
 
 const ThrottleComponent = () => {
     const [value, handleThrottle] = useThrottle({delay: 500});

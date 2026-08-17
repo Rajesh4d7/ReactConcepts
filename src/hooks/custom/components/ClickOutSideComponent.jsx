@@ -1,5 +1,5 @@
 import {useState} from 'react'
-import useOnClickOutside from '../customHooks/useOnClickOutside'
+import useOnClickOutside from '../hooks/useOnClickOutside'
 
 const ClickOutSideComponent = () => {
     const [isOpen, setIsOpen] = useState(false);

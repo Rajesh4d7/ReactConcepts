@@ -1,5 +1,5 @@
 import 'react';
-import useDebounce from '../customHooks/useDebounce';
+import useDebounce from '../hooks/useDebounce';
 
 const DebounceComponent = () => {
     const [value, handleDebounce] = useDebounce({delay: 500});

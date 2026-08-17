@@ -1,5 +1,5 @@
 import 'react';
-import useCounter from '../customHooks/useCounter';
+import useCounter from '../hooks/useCounter';
 
 const CounterComponent = () => {
   const { count,stepDiff, increment, decrement, resetCount, handleStep } = useCounter({ initialValue: 1, maxValue: 10 });
