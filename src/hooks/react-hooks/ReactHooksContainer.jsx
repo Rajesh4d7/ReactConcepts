@@ -1,5 +1,6 @@
 import 'react';
-import LanguageContainer from './context-examples/language-context/LanguageContainer'
+import LanguageContainerContextState from './context-examples/language-context/LanguageContainerContextState'
+import LanguageContainerContextReducer from './reducer-context-examples/locale-context-reducer/LanguageContainerContextReducer'
 import './ReactHooksContainer.css'
 
 const ReactHooksContainer = () => {
@@ -7,7 +8,8 @@ const ReactHooksContainer = () => {
     <div>
       <h2>React Hooks</h2>
       <div className='reactHooksContainer'>
-        <LanguageContainer/>
+        <LanguageContainerContextState/>
+        <LanguageContainerContextReducer />
       </div>
     </div>
   );

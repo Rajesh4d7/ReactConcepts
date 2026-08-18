@@ -3,7 +3,7 @@ import useLocale from './hooks/useLocale'
 import LanguageContext from './contexts/LanguageContext'
 import ChildComponent from './components/ChildComponent'
 
-const LanguageContainer = () => {
+const LanguageContainerContextState = () => {
     const  intl =  useLocale()
 
     return (
@@ -16,4 +16,4 @@ const LanguageContainer = () => {
     )
 }
 
-export default LanguageContainer
+export default LanguageContainerContextState
