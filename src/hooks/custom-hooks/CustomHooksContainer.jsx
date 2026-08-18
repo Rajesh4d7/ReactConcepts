@@ -14,18 +14,21 @@ import './CustomHooksContainer.css';
 
 const CustomHooksContainer = () => {
   return (
-    <div className="hooksContainer">
-      <CounterComponent />
-      <PreviousValue />
-      <DebounceComponent/>
-      <ThrottleComponent />
-      <ThemeComponent />
-      <ClickOutSideComponent />
-      <FetchDataComponent />
-      <EventListenerComponent />
-      <PaginationComponent />
-      <UserRegistrationForm />
-      <WebSocketComponent />
+    <div>
+       <h2>Custom Hooks</h2>
+        <div className="hooksContainer">
+          <CounterComponent />
+          <PreviousValue />
+          <DebounceComponent/>
+          <ThrottleComponent />
+          <ThemeComponent />
+          <ClickOutSideComponent />
+          <FetchDataComponent />
+          <EventListenerComponent />
+          <PaginationComponent />
+          <UserRegistrationForm />
+          <WebSocketComponent />
+        </div>
     </div>
   );
 }
