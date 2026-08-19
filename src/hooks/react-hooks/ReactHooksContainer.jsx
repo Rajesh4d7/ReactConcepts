@@ -1,6 +1,7 @@
 import 'react';
 import LanguageContainerContextState from './context-examples/language-context/LanguageContainerContextState'
 import LanguageContainerContextReducer from './reducer-context-examples/locale-context-reducer/LanguageContainerContextReducer'
+import TaskContainer from './reducer-examples/todo-task/TaskContainer'
 import './ReactHooksContainer.css'
 
 const ReactHooksContainer = () => {
@@ -10,6 +11,7 @@ const ReactHooksContainer = () => {
       <div className='reactHooksContainer'>
         <LanguageContainerContextState/>
         <LanguageContainerContextReducer />
+        <TaskContainer />
       </div>
     </div>
   );
